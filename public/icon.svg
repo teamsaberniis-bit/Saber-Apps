@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0fdf4" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#052e16" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle for Android -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Inner circular glow -->
+  <circle cx="256" cy="256" r="210" fill="#ffffff" fill-opacity="0.08" />
+
+  <!-- Shield Badge -->
+  <g filter="url(#shadow)">
+    <path d="M 256 90 L 370 140 C 370 260 256 345 256 345 C 256 345 142 260 142 140 Z" 
+          fill="url(#shieldGrad)" stroke="#bbf7d0" stroke-width="6" stroke-linejoin="round" />
+  </g>
+
+  <!-- Sparkle Stars / Cleanliness symbols -->
+  <path d="M 256 125 L 263 145 L 283 152 L 263 159 L 256 179 L 249 159 L 229 152 L 249 145 Z" fill="url(#accentGrad)" />
+  <path d="M 330 190 L 334 202 L 346 206 L 334 210 L 330 222 L 326 210 L 314 206 L 326 202 Z" fill="#22c55e" />
+  <path d="M 182 190 L 186 202 L 198 206 L 186 210 L 182 222 L 178 210 L 166 206 L 178 202 Z" fill="#22c55e" />
+
+  <!-- Saber / Broom / Sparkle Monogram icon in center -->
+  <g transform="translate(196, 175) scale(1.5)">
+    <!-- Broom / Cleaning wand -->
+    <path d="M 28 8 L 38 18 L 48 8" stroke="#15803d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <path d="M 40 16 L 68 44" stroke="#15803d" stroke-width="6" stroke-linecap="round" />
+    <path d="M 16 64 C 18 52 28 42 42 42 C 48 42 54 44 58 48 L 32 74 C 24 74 18 70 16 64 Z" fill="url(#accentGrad)" />
+    <!-- Broom bristles -->
+    <path d="M 12 70 L 26 84 M 20 62 L 34 76 M 28 54 L 42 68" stroke="#ea580c" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Islamic Star & Crescent motif / School Ribbon -->
+  <rect x="96" y="380" width="320" height="64" rx="20" fill="#ffffff" filter="url(#shadow)" />
+  <text x="256" y="422" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="28" font-weight="900" fill="#15803d" text-anchor="middle" letter-spacing="3">TIM SABER</text>
+  <text x="256" y="468" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+        font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">NURUL IMAM ISLAMIC SCHOOL</text>
+</svg>
